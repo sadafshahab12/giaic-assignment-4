@@ -40,4 +40,13 @@ Jaise ki, agar toys ki length 5 hai, toh sahi indices hain:
 - 3 (chautha element)
 - 4 (paanchva element)
 
-Isliye, hum <b>len(toys) - 1</b> ka istemaal karte hain taaki humein sahi aur valid index mil sake.
+Isliye, hum **len(toys) - 1** ka istemaal karte hain taaki humein sahi aur valid index mil sake.
+
+## random password
+### Define the character pool
+- Create a string containing:
+ - Uppercase letters (ABCDEFGHIJKLMNOPQRSTUVWXYZ)
+ - Lowercase letters (abcdefghijklmnopqrstuvwxyz)
+ - Digits (0123456789)
+
+- You can use Python's string module (string.ascii_letters and string.digits) to get these.

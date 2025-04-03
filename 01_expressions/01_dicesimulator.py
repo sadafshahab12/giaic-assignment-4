@@ -1,6 +1,24 @@
 # Simulate rolling two dice, three times. Prints the results of each die roll. This program is used to show how variable scope works.
 
-dice_1 = [1,2,3,4,5,6]
-dice_2 = [1,2,3,4,5,6]
+import random
+
+num_sides = 6  # Number of sides on the dice
+
+def roll_dice():
+    """Simulate rolling two dice and return the results."""
+    die_1 = random.randint(1, num_sides)
+    die_2 = random.randint(1, num_sides)
+    print(f"Die 1: {die_1} , Die 2: {die_2}")
+    total = die_1 + die_2
+    print(f"Total : {total}")
 
 
+def main():
+    """Roll dice three times"""
+    roll_dice()
+    roll_dice()
+    roll_dice()
+
+
+if __name__ == "__main__":
+    main()
