@@ -23,5 +23,6 @@ def main():
     print(f"Drew is {drew}")
     print(f"Ethan is {ethan}")
 
+
 if __name__ == "__main__":
     main()

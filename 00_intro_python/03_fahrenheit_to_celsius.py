@@ -9,7 +9,6 @@
 # Enter temperature in Fahrenheit: 76
 # Temperature: 76.0F = 24.444444444444443C
 
-
 def main():
     degrees_fahrenheit = input("Enter temperature in Fahrenheit: ")
     degrees_fahrenheit = float(degrees_fahrenheit)
@@ -17,7 +16,6 @@ def main():
     print(
         f"Temperature: \033[1m\033[3m{degrees_fahrenheit}\033[0m =  {degrees_celsius} C"
     )
-
-
+    
 if __name__ == "__main__":
     main()
