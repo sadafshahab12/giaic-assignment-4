@@ -13,3 +13,31 @@ print(f"\n\nMy favourite animal is also \033[1m\033[3m{user_input}!\033[0m")
  \033[1m makes the text bold
 - \033[3m makes the text italic
 - \033[0m resets the text style
+
+## random
+In Python, the random module is like this magic box. It helps you get random results whenever you need them.
+
+## -- Print a random index
+random_index = random.randint(0, len(toys) - 1)
+print(random_index)
+
+## -- Alternatively, you can use random.choice to select a random index directly
+print(random.choice(range(len(toys))))
+
+
+### Note that random.choice can't be used directly with an integer (like random.choice(0)), because random.choice expects a sequence (like a list or a string) as its argument.
+
+Jab hum random.randint(0, len(toys) - 1) ka istemaal karte hain, 
+toh yeh humein ek random index deta hai jo 0 se lekar toys ki length minus 1 tak ho sakta hai.
+
+Yeh zaroori hai kyun ki Python mein lists ka indexing 0 se shuru hota hai. Isliye, agar hum len(toys) ka istemaal karte hain, toh humein IndexError mil sakta hai.
+
+Jaise ki, agar toys ki length 5 hai, toh sahi indices hain:
+
+- 0 (pehla element)
+- 1 (dusra element)
+- 2 (teesra element)
+- 3 (chautha element)
+- 4 (paanchva element)
+
+Isliye, hum <b>len(toys) - 1</b> ka istemaal karte hain taaki humein sahi aur valid index mil sake.
