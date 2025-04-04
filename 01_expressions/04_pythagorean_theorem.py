@@ -13,8 +13,6 @@
 # Enter the length of AC: 4
 # The length of BC (the hypotenuse) is: 5.0
 import math
-
-
 def main():
     AB = float(input("Enter the length of AB: "))
     AC = float(input("Enter the length of AC:"))
