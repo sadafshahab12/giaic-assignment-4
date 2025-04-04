@@ -1,8 +1,10 @@
+# variable scope 
 # Simulate rolling two dice, three times. Prints the results of each die roll. This program is used to show how variable scope works.
 
 import random
 
-num_sides = 6  # Number of sides on the dice
+num_sides = 6  # Number of sides on the dice  #variable scope
+
 
 def roll_dice():
     """Simulate rolling two dice and return the results."""
@@ -14,10 +16,12 @@ def roll_dice():
 
 
 def main():
+    # die_1 = 10 
     """Roll dice three times"""
     roll_dice()
     roll_dice()
     roll_dice()
+    # print(die_1)
 
 
 if __name__ == "__main__":
