@@ -67,7 +67,6 @@ Variable scope is like the rooms where you play with your toys. Each room (funct
 - num_sides is a toy that you can see from both rooms, so you can play with it in both rooms.
 - die_1 and die_2 are toys that you can only see in Room 2 (roll_dice() function), so you can only play with them in that room.
 
-
 In Python, the // operator is used for integer division, also known as floor division.
 
 It divides the dividend (the number being divided) by the divisor (the number by which we are dividing) and returns the largest possible integer.
@@ -84,3 +83,16 @@ So, in summary:
 
 - / performs floating-point division
 - // performs integer division (floor division)
+
+## Return Statement in Python
+
+Return statement ka kaam hai function se bahar nikalne ke liye. Jab hum return statement ko use karte hain, toh function ka execution ruk jata hai aur function se bahar nikalne ke liye jo value hum return statement ke saath dete hain, woh value function ko call karne wale code mein wapas aa jati hai.
+
+Is example mein, add_many_numbers function mein return statement ka use karke hum total variable ki value ko wapas kar rahe hain. Phir, yeh value main function mein sum_of_many_number variable mein store ho jati hai.
+
+Yeh return statement ka kaam hai:
+
+- Function ka execution rukna
+- Function se bahar nikalne ke liye value wapas karna
+
+**Agar hum return statement ko use na karein, toh function ka execution poora hoga, lekin humein function se bahar nikalne ke liye koi value nahi milegi.**
