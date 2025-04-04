@@ -12,12 +12,17 @@
 # Enter the length of AB: 3
 # Enter the length of AC: 4
 # The length of BC (the hypotenuse) is: 5.0
+import math
+
 
 def main():
-  AB = float(input("Enter the length of AB: "))
-  AC = float(input("Enter the length of AC:"))
-  hypotenuse = (AB ** 2 + AC ** 2)
-  print(f"The length of BC (the hypotenuse) is {hypotenuse ** 0.5}")
+    AB = float(input("Enter the length of AB: "))
+    AC = float(input("Enter the length of AC:"))
+    # hypotenuse = (AB ** 2 + AC ** 2)
+    hypotenuse = math.sqrt(AB**2 + AC**2)
+
+    print(f"The length of BC (the hypotenuse) is {hypotenuse}")
+
 
 if __name__ == "__main__":
-  main()
+    main()

@@ -66,3 +66,21 @@ Variable scope is like the rooms where you play with your toys. Each room (funct
 
 - num_sides is a toy that you can see from both rooms, so you can play with it in both rooms.
 - die_1 and die_2 are toys that you can only see in Room 2 (roll_dice() function), so you can only play with them in that room.
+
+
+In Python, the // operator is used for integer division, also known as floor division.
+
+It divides the dividend (the number being divided) by the divisor (the number by which we are dividing) and returns the largest possible integer.
+
+For example:
+10 // 3 returns 3, not 3.33
+7 // 2 returns 3, not 3.5
+
+This is different from the / operator, which performs floating-point division and returns a decimal result.
+For example:
+10 / 3 returns 3.33
+7 / 2 returns 3.5
+So, in summary:
+
+- / performs floating-point division
+- // performs integer division (floor division)
