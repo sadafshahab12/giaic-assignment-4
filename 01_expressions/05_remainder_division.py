@@ -8,9 +8,9 @@
 def main():
   first_number = int (input("Enter an integer to be divided: "))
   second_number = int(input("Enter an integer to divide by: "))
-  result = first_number / second_number
+  result = first_number // second_number
   remainder = first_number % second_number
-  print(f"The result of this division is {result:.2f} with a remainder of {remainder}")
+  print(f"The result of this division is {result} with a remainder of {remainder}")
   
 if __name__ == "__main__":
   main()
