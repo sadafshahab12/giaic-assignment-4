@@ -96,3 +96,16 @@ Yeh return statement ka kaam hai:
 - Function se bahar nikalne ke liye value wapas karna
 
 **Agar hum return statement ko use na karein, toh function ka execution poora hoga, lekin humein function se bahar nikalne ke liye koi value nahi milegi.**
+
+## Function / Class Purpose
+
+- tk.Tk() Creates the main application window
+- tk.Canvas() Creates a drawing area (the canvas)
+- canvas.pack() Places the canvas into the window
+- canvas.create_rectangle(x1, y1, x2, y2, \*\*options) Draws a rectangle on the canvas
+- canvas.itemconfig(id, fill='color') Changes the color of an existing item
+- canvas.bind(event, handler) Attaches mouse or key events to functions
+
+### creating eraser
+
+**Imagine a little rectangle on the screen that you can move around with your mouse. As it moves, it “erases” the blue cells it touches by turning them white.**
