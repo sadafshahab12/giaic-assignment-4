@@ -108,4 +108,9 @@ Yeh return statement ka kaam hai:
 
 ### creating eraser
 
+## Make a Draggable Eraser
 **Imagine a little rectangle on the screen that you can move around with your mouse. As it moves, it “erases” the blue cells it touches by turning them white.**
+
+### **Why is mainloop() needed?**
+- root.mainloop() starts the Tkinter event loop.
+- Without it, the script runs and exits instantly, so the window doesn't stay open.
