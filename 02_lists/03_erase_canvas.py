@@ -17,14 +17,14 @@ rows = 10
 cols = 10
 cell_size = 50  # 500/10 = 50
 
-cells = []
+cells = [] # we will store the cell info in this list
 
 for row in range(rows):
     for col in range(cols):
-        x1 = col * cell_size
-        y1 = row * cell_size
-        x2 = x1 + cell_size
-        y2 = y1 + cell_size
+        x1 = col * cell_size # * cell ki position ko calculate karte hain.
+        y1 = row * cell_size # * cell ki position ko calculate karte hain.
+        x2 = x1 + cell_size # + cell ki size ko add karte hain.
+        y2 = y1 + cell_size # + cell ki size ko add karte hain.
         rect = canvas.create_rectangle(
             x1, y1, x2, y2, fill="blue", outline="white", tags="cell"
         )
@@ -77,7 +77,7 @@ def on_mouse_drag(event):
                 canvas.itemconfig(cell["id"], fill="white")
 
 
-def on_mouse_release(event):
+def on_mouse_release():
     """function to remove the eraser after releasing the mouse"""
     global eraser_rect, eraser_overlap
     if eraser_rect:

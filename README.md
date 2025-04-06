@@ -114,3 +114,25 @@ Yeh return statement ka kaam hai:
 ### **Why is mainloop() needed?**
 - root.mainloop() starts the Tkinter event loop.
 - Without it, the script runs and exits instantly, so the window doesn't stay open.
+
+Pack function ke kaam
+### Pack function ke kaam mein shamil hain:
+
+- Widgets ko window mein add karna: Pack function widgets ko window mein add karta hai.
+- Widgets ko arrange karna: Pack function widgets ko ek dusre ke neeche ya saath mein arrange karta hai.
+- Widgets ko resize karna: Pack function widgets ko window ke size ke hisab se resize karta hai.
+- Widgets ko position karna: Pack function widgets ko window mein ek specific position par position karta hai.
+
+## Create a rectangle with a tag
+rect = canvas.create_rectangle(10, 10, 50, 50, tags="cell")
+
+### Use the tag to move the rectangle
+canvas.move("cell", 10, 10)
+
+### Use the tag to delete the rectangle
+canvas.delete("cell")
+
+- r1["x2"] < r2["x1"]: This condition checks if the right edge of the first rectangle is to the left of the left edge of the second rectangle. If this is true, the rectangles do not overlap.
+- r1["x1"] > r2["x2"]: This condition checks if the left edge of the first rectangle is to the right of the right edge of the second rectangle. If this is true, the rectangles do not overlap.
+- r1["y2"] < r2["y1"]: This condition checks if the bottom edge of the first rectangle is above the top edge of the second rectangle. If this is true, the rectangles do not overlap.
+- r1["y1"] > r2["y2"]: This condition checks if the top edge of the first rectangle is below the bottom edge of the second rectangle. If this is true, the rectangles do not overlap.
