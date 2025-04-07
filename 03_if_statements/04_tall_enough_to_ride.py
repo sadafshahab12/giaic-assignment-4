@@ -8,3 +8,19 @@
 # How tall are you? 10
 # You're not tall enough to ride, but maybe next year!
 # (For an extra challenge, write code which will repeatedly ask a user how tall they are and tell them whether or not they're tall enough to ride, until the user doesn't enter a height at all, in which case the program stops. Curious about how to do this? See the function tall_enough_extension() in the solution code!)
+
+MIN_HEIGHT = 50
+
+
+def main():
+    # Ask the user how tall they are
+    height = int(input("How tall are you?"))
+    # check if the user entered a valid number
+    if height >= MIN_HEIGHT:
+        print("You're tall enough to ride!")
+    else:
+        print("You're not tall enough to ride, but maybe next year!")
+
+
+if __name__ == "__main__":
+    main()
