@@ -155,3 +155,27 @@ print(number, end=' ')
 ### ✅ What this does:
 
 - It prints the number and puts a space instead of going to the next line.
+
+## Fibonacci
+
+Yeh code ek Fibonacci sequence banata hai, jo ke ek aisi series hai jisme har number apne se pehle do numbers ka sum hota hai.
+
+Agar hum yeh sequence dekhain to yeh kuch is tarah hota hai:
+
+0, 1, 1, 2, 3, 5, 8, 13, 21...
+
+## range()
+
+- range() function ek sequence of numbers generate karta hai.
+  Yahaan range(10, 0, -1) ka matlab hai:
+  10: Start value (yeh number sequence ka pehla number hoga).
+  0: Stop value (yeh number sequence ka aakhri number nahi hoga, lekin sequence is se pehle ruk jayega).
+
+range(10, 0, -1) mein jo -1 hai, wo step size hai. Step size yeh batata hai ke hum numbers ko kis rate se change karenge.
+- Agar step size positive ho, jaise 1, toh numbers aage badhenge (1, 2, 3, 4...).
+- Agar step size negative ho, jaise -1, toh numbers peeche jayenge (10, 9, 8, 7...).
+
+### range(10, 0, -1) ka matlab hai:
+- Start number: 10 se start karna.
+- Stop number: 0 tak jaana, lekin 0 ko include nahi karenge (sequence 0 se thoda pehle rukega).
+- Step size: -1 ka matlab hai hum numbers ko 1-1 kam karenge, yani reverse counting karenge.
