@@ -109,13 +109,16 @@ Yeh return statement ka kaam hai:
 ### creating eraser
 
 ## Make a Draggable Eraser
+
 **Imagine a little rectangle on the screen that you can move around with your mouse. As it moves, it “erases” the blue cells it touches by turning them white.**
 
 ### **Why is mainloop() needed?**
+
 - root.mainloop() starts the Tkinter event loop.
 - Without it, the script runs and exits instantly, so the window doesn't stay open.
 
 Pack function ke kaam
+
 ### Pack function ke kaam mein shamil hain:
 
 - Widgets ko window mein add karna: Pack function widgets ko window mein add karta hai.
@@ -124,12 +127,15 @@ Pack function ke kaam
 - Widgets ko position karna: Pack function widgets ko window mein ek specific position par position karta hai.
 
 ## Create a rectangle with a tag
+
 rect = canvas.create_rectangle(10, 10, 50, 50, tags="cell")
 
 ### Use the tag to move the rectangle
+
 canvas.move("cell", 10, 10)
 
 ### Use the tag to delete the rectangle
+
 canvas.delete("cell")
 
 - r1["x2"] < r2["x1"]: This condition checks if the right edge of the first rectangle is to the left of the left edge of the second rectangle. If this is true, the rectangles do not overlap.
@@ -138,4 +144,14 @@ canvas.delete("cell")
 - r1["y1"] > r2["y2"]: This condition checks if the top edge of the first rectangle is below the bottom edge of the second rectangle. If this is true, the rectangles do not overlap.
 
 ### Random Library of Python
+
 - python random library has a function randint which returns an integer
+
+## Step 4: Print that number on the same line (end =" ")
+
+We don’t want to print each number on a new line, so we add a little trick to make them print side by side:
+print(number, end=' ')
+
+### ✅ What this does:
+
+- It prints the number and puts a space instead of going to the next line.
