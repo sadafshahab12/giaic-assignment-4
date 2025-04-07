@@ -136,3 +136,6 @@ canvas.delete("cell")
 - r1["x1"] > r2["x2"]: This condition checks if the left edge of the first rectangle is to the right of the right edge of the second rectangle. If this is true, the rectangles do not overlap.
 - r1["y2"] < r2["y1"]: This condition checks if the bottom edge of the first rectangle is above the top edge of the second rectangle. If this is true, the rectangles do not overlap.
 - r1["y1"] > r2["y2"]: This condition checks if the top edge of the first rectangle is below the bottom edge of the second rectangle. If this is true, the rectangles do not overlap.
+
+### Random Library of Python
+- python random library has a function randint which returns an integer
