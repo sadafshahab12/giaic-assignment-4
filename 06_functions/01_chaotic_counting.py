@@ -6,7 +6,6 @@
 
 import random
 
-
 def chaotic_counting():
     for i in range(10):
         curr_num = i + 1
