@@ -23,3 +23,22 @@
 # Received the following user data: ('Jane', 'Stanford', 'janestanford@stanford.edu')
 
 # (Note. This idea is called tuple packing/unpacking. We "pack" our return values into a single data structure called a tuple. We can then "unpack" these values back into our original values or leave them as a tuple.)
+
+
+def get_user_info():
+    first_name = input("What is your first name?: ")
+    last_name = input("What is your last name?: ")
+    email = input("What is your email address?: ")
+    return first_name, last_name, email
+
+
+# Now we can call this function and print out the returned data like so:
+
+
+def main():
+    user_data = get_user_info()
+    print("Received the following user data: ", user_data)
+
+
+if __name__ == "__main__":
+    main()
