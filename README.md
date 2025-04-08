@@ -179,3 +179,11 @@ range(10, 0, -1) mein jo -1 hai, wo step size hai. Step size yeh batata hai ke h
 - Start number: 10 se start karna.
 - Stop number: 0 tak jaana, lekin 0 ko include nahi karenge (sequence 0 se thoda pehle rukega).
 - Step size: -1 ka matlab hai hum numbers ko 1-1 kam karenge, yani reverse counting karenge.
+
+## random.random() aik Python function hai jo:
+
+- Har dafa chalane par 0 aur 1 ke darmiyan koi random (bila-tarteeb) number deta hai.
+- Example: 0.12, 0.79, 0.03, etc.
+
+## DONE_LIKELIHOOD = 0.3 ka matlab kya hai?
+Yeh batata hai ke done() function ko kitni probability (imtinaan ka chance) milay ke woh True return kare — yaani ke counting ko rok day.
