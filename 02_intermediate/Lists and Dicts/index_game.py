@@ -8,6 +8,7 @@ def access_element(lst, index):
 def modify_element(lst, index, new_value):
     try:
         lst[index] = new_value
+        return lst
     except IndexError:
         return "Index out of range"
 
