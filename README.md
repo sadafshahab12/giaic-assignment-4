@@ -172,10 +172,12 @@ Agar hum yeh sequence dekhain to yeh kuch is tarah hota hai:
   0: Stop value (yeh number sequence ka aakhri number nahi hoga, lekin sequence is se pehle ruk jayega).
 
 range(10, 0, -1) mein jo -1 hai, wo step size hai. Step size yeh batata hai ke hum numbers ko kis rate se change karenge.
+
 - Agar step size positive ho, jaise 1, toh numbers aage badhenge (1, 2, 3, 4...).
 - Agar step size negative ho, jaise -1, toh numbers peeche jayenge (10, 9, 8, 7...).
 
 ### range(10, 0, -1) ka matlab hai:
+
 - Start number: 10 se start karna.
 - Stop number: 0 tak jaana, lekin 0 ko include nahi karenge (sequence 0 se thoda pehle rukega).
 - Step size: -1 ka matlab hai hum numbers ko 1-1 kam karenge, yani reverse counting karenge.
@@ -186,4 +188,14 @@ range(10, 0, -1) mein jo -1 hai, wo step size hai. Step size yeh batata hai ke h
 - Example: 0.12, 0.79, 0.03, etc.
 
 ## DONE_LIKELIHOOD = 0.3 ka matlab kya hai?
+
 Yeh batata hai ke done() function ko kitni probability (imtinaan ka chance) milay ke woh True return kare — yaani ke counting ko rok day.
+
+## append
+**.append() modifies the original list directly — it doesn't create or return a new one.**
+In Python, the .append() method modifies the list in place and returns None. So if you try to store the result of append() in a variable, like this:
+
+result = fruit_list.append('mango')
+print(result) # This will print: None
+
+…it will always print None because .append() doesn't return the updated list — it just updates the original list.
