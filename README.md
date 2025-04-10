@@ -192,6 +192,7 @@ range(10, 0, -1) mein jo -1 hai, wo step size hai. Step size yeh batata hai ke h
 Yeh batata hai ke done() function ko kitni probability (imtinaan ka chance) milay ke woh True return kare — yaani ke counting ko rok day.
 
 ## append
+
 **.append() modifies the original list directly — it doesn't create or return a new one.**
 In Python, the .append() method modifies the list in place and returns None. So if you try to store the result of append() in a variable, like this:
 
@@ -199,3 +200,8 @@ result = fruit_list.append('mango')
 print(result) # This will print: None
 
 …it will always print None because .append() doesn't return the updated list — it just updates the original list.
+
+### mins, secs = divmod(t):
+
+The divmod(t) is like a helper that takes the total seconds and turns them into minutes and seconds.
+end="\r" makes it update on the same line instead of printing new lines.
